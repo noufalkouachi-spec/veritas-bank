@@ -345,6 +345,9 @@ def verify_statement():
         return jsonify({"status": "Genuine"})
     else:
         return jsonify({"status": "Fake"})
+@app.route('/admin')
+def admin_dashboard():
+    return render_template_string(HTML_TEMPLATE)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
