@@ -1,3 +1,7 @@
+print("Server is starting...")
+import hashlib
+import os
+from flask import Flask, ... (وبقية الأسطر)
 import hashlib
 import os
 from flask import Flask, jsonify, request, render_template_string
